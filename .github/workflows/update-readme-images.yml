@@ -10,13 +10,13 @@ jobs:
   generate-readme-images:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout the repository
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: true   # Very important
 
-      # Step 2: Generate Markdown table for all images in Assert/
       - name: Generate Markdown for Images
         run: |
-          cd Assert
+          cd Assert || exit
           echo "| Image |" > ../README_IMAGES.md
           echo "| --- |" >> ../README_IMAGES.md
           for img in *.{png,jpg,jpeg,gif}; do
@@ -25,13 +25,10 @@ jobs:
             fi
           done
 
-      # Step 3: Commit and push using GITHUB_TOKEN
       - name: Commit and Push README Images
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add README_IMAGES.md
           git diff-index --quiet HEAD || git commit -m "Update README images"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
+          git push
