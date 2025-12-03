@@ -82,7 +82,7 @@ Below are detailed explanations, functionality, and use cases for every script.
 * Detect new log files
 * Trigger build scripts on file save
 
-### ✔ Use Cases
+### ✔ Code
 
 <img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1760859833294.jpg" width="50%" height="50%">
 
@@ -107,6 +107,11 @@ Below are detailed explanations, functionality, and use cases for every script.
 * Cache config lookups
 * Store short-lived tokens
 
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1760859772234.jpg" width="50%" height="50%">
+
 </details>
 
 ---
@@ -126,6 +131,11 @@ Below are detailed explanations, functionality, and use cases for every script.
 
 * Secure confidential documents
 * Bulk protect reports or invoices
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764735247249.jpg" width="50%" height="50%">
 
 </details>
 
@@ -147,6 +157,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 * Free disk space
 * Check for identical files
 
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764735292135.jpg" width="50%" height="50%">
+
 </details>
 
 ---
@@ -166,6 +180,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 
 * Quick audio memos
 * Audio dataset creation
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764435940098.jpg" width="50%" height="50%">
 
 </details>
 
@@ -187,6 +205,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 * Photography workflows
 * Preprocessing for ML models
 
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764735322911.jpg" width="50%" height="50%">
+
 </details>
 
 ---
@@ -206,6 +228,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 
 * Edit locked PDF files
 * Extract structured text
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764735336629.jpg" width="50%" height="50%">
 
 </details>
 
@@ -227,6 +253,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 * Automated wallpaper rotation
 * Personalized desktop themes
 
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764735370118.jpg" width="50%" height="50%">
+
 </details>
 
 ---
@@ -245,6 +275,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 
 * Locate files across drives
 * Build simple indexing utilities
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764735391205.jpg" width="50%" height="50%">
 
 </details>
 
@@ -265,6 +299,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 
 * Intro to steganography
 * Digital watermarking basics
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1764735353161.jpg" width="50%" height="50%">
 
 </details>
 
