@@ -84,7 +84,7 @@ Below are detailed explanations, functionality, and use cases for every script.
 
 ### ✔ Use Cases
 
-<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/FB_IMG_1760859833294.jpg" width="50%" height="50%">
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/FB_IMG_1760859833294.jpg" width="50%" height="50%">
 
 </details>
 
