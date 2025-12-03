@@ -1,0 +1,28 @@
+name: Update README Images
+
+on:
+  push:
+    paths:
+      - 'assert/**'
+  workflow_dispatch:
+
+jobs:
+  generate-readme-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Markdown for Images
+        run: |
+          cd assets
+          echo "| Image |" > ../README_IMAGES.md
+          echo "| --- |" >> ../README_IMAGES.md
+          for img in *.{png,jpg,jpeg,gif}; do
+            echo "| ![${img}](assets/${img}) |" >> ../README_IMAGES.md
+          done
+      - name: Commit and Push README Images
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README_IMAGES.md
+          git commit -m "Update README images" || echo "No changes"
+          git push

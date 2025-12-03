@@ -327,3 +327,13 @@ Distributed under the **MIT License**.
 See `LICENSE` for details.
 
 ---
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+## Gallery of Images
+<!-- Auto-generated -->
+{% include README_IMAGES.md %}
+
+</details>
+
+---
