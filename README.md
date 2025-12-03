@@ -82,6 +82,10 @@ Below are detailed explanations, functionality, and use cases for every script.
 * Detect new log files
 * Trigger build scripts on file save
 
+### ✔ Use Cases
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/FB_IMG_1760859833294.jpg" width="50%" height="50%">
+
 </details>
 
 ---
