@@ -12,7 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          persist-credentials: true   # Very important
+          # 👇 1. Pass the secret token to the checkout action
+          # This authenticates the git operations with your PAT
+          token: ${{ secrets.REPO_ACCESS_TOKEN }} 
+          persist-credentials: true
 
       - name: Generate Markdown for Images
         run: |
@@ -21,14 +24,24 @@ jobs:
           echo "| --- |" >> ../README_IMAGES.md
           for img in *.{png,jpg,jpeg,gif}; do
             if [ -f "$img" ]; then
+              # Note: Using the raw file name for simplicity in the markdown link
               echo "| ![${img}](Assert/${img}) |" >> ../README_IMAGES.md
             fi
           done
 
       - name: Commit and Push README Images
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          # 👇 2. Set the git user info to identify the commit
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
           git add README_IMAGES.md
-          git diff-index --quiet HEAD || git commit -m "Update README images"
-          git push
+          
+          # 👇 3. Check if there are changes before committing
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update README images"
+            # 4. Push the changes. It will now use the token provided above.
+            git push
+          else
+            echo "No changes to commit."
+          fi
