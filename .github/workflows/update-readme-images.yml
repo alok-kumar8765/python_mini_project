@@ -16,11 +16,9 @@ jobs:
       # Step 2: Generate Markdown table for all images in Assert/
       - name: Generate Markdown for Images
         run: |
-          mkdir -p Assert
           cd Assert
           echo "| Image |" > ../README_IMAGES.md
           echo "| --- |" >> ../README_IMAGES.md
-          # Loop through image files
           for img in *.{png,jpg,jpeg,gif}; do
             if [ -f "$img" ]; then
               echo "| ![${img}](Assert/${img}) |" >> ../README_IMAGES.md
