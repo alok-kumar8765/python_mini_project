@@ -2,8 +2,10 @@ name: Update README Images
 
 on:
   push:
+    # Trigger if files change in either 'Assert/' or 'CPU/'
     paths:
       - 'Assert/**'
+      - 'CPU/**'
   workflow_dispatch:
 
 jobs:
@@ -12,35 +14,66 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          # 👇 1. Pass the secret token to the checkout action
-          # This authenticates the git operations with your PAT
+          # Use the secret token for write access
           token: ${{ secrets.REPO_ACCESS_TOKEN }} 
           persist-credentials: true
 
-      - name: Generate Markdown for Images
+      # --- Step 1: Initialize README_IMAGES.md and Process Assert Images ---
+      - name: Generate Markdown for Assert Images
         run: |
-          cd Assert || exit
-          echo "| Image |" > ../README_IMAGES.md
-          echo "| --- |" >> ../README_IMAGES.md
-          for img in *.{png,jpg,jpeg,gif}; do
-            if [ -f "$img" ]; then
-              # Note: Using the raw file name for simplicity in the markdown link
-              echo "| ![${img}](Assert/${img}) |" >> ../README_IMAGES.md
-            fi
-          done
+          # Initialize the file with a header for the Assert section
+          echo "## 🖼️ Assert Directory Images" > README_IMAGES.md
+          echo "| Image |" >> README_IMAGES.md
+          echo "| --- |" >> README_IMAGES.md
+          
+          # Process images in the Assert directory
+          if [ -d "Assert" ]; then
+            cd Assert || exit
+            for img in *.{png,jpg,jpeg,gif}; do
+              if [ -f "$img" ]; then
+                # Use ../README_IMAGES.md to write to the file in the root
+                echo "| ![${img}](Assert/${img}) |" >> ../README_IMAGES.md
+              fi
+            done
+            cd .. # Go back to root
+          else
+            echo "Assert directory not found." >> README_IMAGES.md
+          fi
 
+
+      # --- Step 2: Process CPU Images and Append ---
+      - name: Append Markdown for CPU Images
+        run: |
+          # Add a header for the CPU section
+          echo "" >> README_IMAGES.md
+          echo "## 🖥️ CPU Directory Images" >> README_IMAGES.md
+          echo "| Image |" >> README_IMAGES.md
+          echo "| --- |" >> README_IMAGES.md
+          
+          # Process images in the CPU directory
+          if [ -d "CPU" ]; then
+            cd CPU || exit
+            for img in *.{png,jpg,jpeg,gif}; do
+              if [ -f "$img" ]; then
+                # Append to the file in the root
+                echo "| ![${img}](CPU/${img}) |" >> ../README_IMAGES.md
+              fi
+            done
+            cd .. # Go back to root
+          else
+            echo "CPU directory not found." >> README_IMAGES.md
+          fi
+
+      # --- Step 3: Commit and Push the combined file ---
       - name: Commit and Push README Images
         run: |
-          # 👇 2. Set the git user info to identify the commit
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           git add README_IMAGES.md
           
-          # 👇 3. Check if there are changes before committing
           if ! git diff-index --quiet HEAD; then
-            git commit -m "Update README images"
-            # 4. Push the changes. It will now use the token provided above.
+            git commit -m "Update README images (Assert and CPU)"
             git push
           else
             echo "No changes to commit."
