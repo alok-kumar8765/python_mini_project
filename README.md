@@ -44,6 +44,18 @@ A diverse collection of small, practical Python scripts showcasing real-world us
    * Interactive Folium Map (Multi Marker)    
    * Desktop Notification Alert    
    * Simple Data Validator (Placeholder)
+   * Auto Title Generator
+   * Find Your Country In MAP
+   * Beep Alarm Clock
+   * Mini PDF Text Writer
+   * Colorful Calendar
+   * Qr Code Generates
+   * Image Color Extraction
+   * Text to Audio
+   * AudioBook
+   * Color Name INTO Hex
+   * Interactive HTML Table
+   * Wifi QR Code Generator
 4. **Contributing**
 5. **License**
 
@@ -570,6 +582,194 @@ Below are detailed explanations, functionality, and use cases for every script.
 </details>
 
 ---
+
+## **21. Wifi QR Code Generator**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+### ✔ Code Explanation
+
+* Uses QR Code for your WIFI.
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/l.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+## **22. Interactive HTML Table in Browser**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/k.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+## **23. Tunrn Any Color Name Into HEX**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/j.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+## **24. AudioBook Creater using gTTS**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+### ✔ Code Explanation
+
+* Uses `gTTS` .
+* Convert Your Text File into audio book.
+
+### ✔ Use Cases
+
+* Using this code you can make your own audiobook app
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/i.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+
+## **25. Speak Text As Audio**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+### ✔ Code Explanation
+
+* Uses `pyttsx3` .
+
+### ✔ Use Cases
+
+* what ever you input in text it speaksup.
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/h.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+
+## **26. Color Extraction From Image**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/g.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+
+## **27. QR Code Generator**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/f.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+## **28. Colorful Calander**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/e.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+## **29. Mini PDF Text Writer**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/d.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+## **30. Beep Alarm**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/c.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
+
+## **31. Find Your Country On MAP**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/b.jpg" width="50%" height="50%">
+
+</details>
+
+---
+## **32. AI Auto Title Generator**
+
+<details>
+<summary>🤫 Click to view code explanation and usage</summary>
+
+
+### ✔ Code
+
+<img src="https://github.com/alok-kumar8765/python_mini_project/blob/main/Assert/a.jpg" width="50%" height="50%">
+
+</details>
+
+---
+
 
 ## 🤝 Contributing
 
